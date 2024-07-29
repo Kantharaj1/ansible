@@ -1,0 +1,29 @@
+	useradd ansadmin
+	passwd ansadmin
+	
+	it demands password and set it 
+	retype it and and click enter
+	
+	
+	1  sudo ssh ansadmin@172-31-35-146
+    2  sudo ssh ansadmin@ip-172-31-35-146
+    3  sudo su -ansadmin
+    4  exit
+    5  ssh-keygen
+    6  cd .ssh
+    7  ls -a
+    8  ssh-copy-id ansadmin@ip-172-31-45-159
+    9  ssh-copy-id ansadmin@ip-172-31-35-146
+   10  exit
+   11  ls
+   12  ls -a
+   13  exit
+   14  ls -a
+   15  cd .ssh
+   16  ls -a
+   17  pwd
+   18  cd
+   19  pwd
+   20  ssh ip@-172-31-45-159
+   21  ssh ip-172-31-45-159
+   22  history
