@@ -1,0 +1,128 @@
+
+    1  sudo ssh ansadmin@172-31-35-146
+    2  sudo ssh ansadmin@ip-172-31-35-146
+    3  sudo su -ansadmin
+    4  exit
+    5  ssh-keygen
+    6  cd .ssh
+    7  ls -a
+    8  ssh-copy-id ansadmin@ip-172-31-45-159
+    9  ssh-copy-id ansadmin@ip-172-31-35-146
+   10  exit
+   11  ls
+   12  ls -a
+   13  exit
+   14  ls -a
+   15  cd .ssh
+   16  ls -a
+   17  pwd
+   18  cd
+   19  pwd
+   20  ssh ip@-172-31-45-159
+   21  ssh ip-172-31-45-159
+   22  history
+   23  exit
+   24   cd /etc/
+   25  ls -a
+   26  grep ans*
+   27  grep | ans*
+   28  exit
+   29  cd /etc/ansible/
+   30  ls
+   31  sudo vi hosts
+   32  cat hosts
+   33  ansible all -m ping
+   34  sudo ssh ansadmin@ip-172-31-35-146
+   35  clear
+   36  ls
+   37  sudo ansible -m ping
+   38  ansible -m ping
+   39  ansible all -m ping
+   40  sudo vi ansible.cfg
+   41  ansible all -m ping
+   42  cat ansible.cfg
+   43  sudo vi ansible.cfg
+   44  ansible all -m ping
+   45  cat hosts
+   46  ansible webservers[0] -m ping
+   47  ansible webservers[1] -m ping
+   48  ansible webservers -m ping
+   49  sudo vi hosts
+   50  cat hosts
+   51  ansible webservers[1]:test[0] -m ping
+   52  ansible webservers[0:1]
+   53  ansible webservers[0:1] -m ping
+   54  ansible webservers:test -m ping
+   55  cat hosts
+   56  ansible webservers:test -m ping
+   57  ansible all -m ping
+   58  ansible webservers --list-hosts
+   59  ansible all --list-hosts
+   60  +
+   61  cd /etc/
+   62  ls
+   63  cd ansible/
+   64  ls
+   65  cat hosts
+   66  ansible test[-1] --list-hosts
+   67  ansible test[-2] --list-hosts
+   68  ansible test --list-hosts
+   69  ansible webservers:test --list-hosts
+   70  sudo vi hosts
+   71  ansible all -m ping
+   72  sudo vi hosts
+   73  ansible all -m ping
+   74  history
+   75  pwd
+   76  cd..
+   77  cd
+   78  pwd
+   79  ls
+   80  ls -a
+   81  ls
+   82  ansible webusers[0] -m command -a "ls"
+   83  cd /etc/ansible/
+   84  ls
+   85  cat hosts
+   86  cd
+   87  ansible webserver[0] -m command -a "ls"
+   88  ansible webservers[0] -m command -a "ls"
+   89  ansible webservers[1] -m command -a "ls"
+   90  ansible all -m command -a "ls -la"
+   91  ansible all -m command -a "touch kantha1file"
+   92  ansible all -m command -a "ls"
+   93  ansible all -m -a "yum install tree -y"
+   94  ansible all -m command -a "yum install tree -y"
+   95  ansible all -m command -a "yum install tree -y" -b
+   96  ansible all -b -m command -a "yum install tree -y"
+   97  systemctl start sshd
+   98  sudo systemctl start sshd
+   99  ansible all -m command -a "yum install -y" -b
+  100  ansible all -m command -a "sudo yum install -y"
+  101  ansible all -m command -a "sudo yum install tree -y"
+  102  ansible all -m command -a "which tree"
+  103  ansible webservers[0] -m command -a "sudo yum install tree -y"
+  104  ansible all -m command -a "ls"
+  105  touch sfile
+  106  ls
+  107  ansible all -m command -a "src=sfile dest=/tmp"
+  108  ansible all -m copy -a "src=sfile dest=/tmp"
+  109  ansible all -a "ls /etc/"
+  110  ansible all -a "ls /etc/ |grep sf"
+  111  ansible all -a "ls /etc/"
+  112  ansible all -a "ls /tmp/"
+  113  ansible all -m yum -a "pkg=tree state=present" -b
+  114  ansible all -m user -a "name=kantha state=present" -b
+  115  ansible all -m user -a "sudo name=kantha state=present"
+  116  ansible all -b -m user -a "name=kantha state=present"
+  117  sudo visudo
+  118  sudo vissudo
+  119  sudo visudo
+  120  sudo ssshd start
+  121  service sshd start
+  122  sudo service sshd start
+  123  ansible all -b -m user -a "name=kantha state=present"
+  124  ansible all -m yum -a "pkg=tree state=present" -b
+  125  ansible all -m setup
+  126   history
+
